@@ -206,6 +206,12 @@
   box-shadow: inset -10px 0 18px rgba(90, 60, 20, 0.12);
 }
 
+.book.is-open .book-pages {
+  background:
+    radial-gradient(circle at 50% 20%, rgba(232, 197, 71, 0.28), transparent 45%),
+    linear-gradient(90deg, #d4b56a 0%, #f4ead8 10%, #fff4dc 100%);
+}
+
 .page-lines {
   height: 100%;
   margin: 28px 16px 20px;
