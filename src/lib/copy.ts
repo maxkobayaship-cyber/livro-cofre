@@ -5,7 +5,7 @@ export const copy = {
   howToTitle: "O fecho antigo",
   howToBody: [
     "Este volume fecha-se com quatro chaves, numa ordem secreta.",
-    "Tens dez chaves e apenas três tentativas. Cada tentativa gasta uma chance.",
+    "Tens dez chaves e apenas quatro tentativas. Cada tentativa gasta uma chance.",
     "Chaves no sítio certo ficam presas no fecho. As outras podem ser trocadas.",
   ],
   legendCorrect: "Ouro — chave certa no lugar certo",
@@ -20,9 +20,10 @@ export const copy = {
   sameGuess: "Muda a combinação antes de tentar outra vez.",
   chancesLabel: "Tentativas",
   chanceLeft: {
-    3: "Três tentativas. O livro espera.",
-    2: "Duas tentativas. O ferro ainda cede.",
-    1: "Última tentativa. O cofre impacienta-se.",
+    4: "Quatro tentativas. O livro espera.",
+    3: "Três tentativas. O ferro ainda cede.",
+    2: "Duas tentativas. O cofre impacienta-se.",
+    1: "Última tentativa. O fecho quase tranca.",
     0: "Não restam tentativas.",
   } as Record<number, string>,
   feedback: (correct: number, present: number) => {
@@ -34,14 +35,16 @@ export const copy = {
         : `${present} certas noutro lugar`;
     return `${a} · ${b}`;
   },
-  winTitle: "O livro abriu-se",
+  winTitle: "O cofre abriu-se",
   winBody:
-    "O fecho cedeu. As páginas antigas recebem a luz e o segredo deixa de ser de ninguém.",
+    "O fecho cedeu. Lá dentro estava o tesouro: dinheiro, um tablet, um MacBook e uns AirPods.",
   winVerse:
-    "Quem guarda um livro, guarda um mundo. Quem abre um cofre, escolhe o que o mundo lembra.",
+    "Quem abre o Livro-Cofre leva o que o volume guardava: fortuna e aparelhos à luz do ouro.",
+  treasureHidden: "Algo brilha lá dentro",
+  treasureRevealed: "Tesouro do volume",
   loseTitle: "O cofre selou-se",
   loseBody:
-    "O ferro esfria. As correntes fecham. O volume recusa-se a abrir — neste livro, o segredo ficou entre as páginas.",
+    "O ferro esfria. As quatro chances acabaram. As correntes fecham e o tesouro — dinheiro, tablet, MacBook e AirPods — fica selado entre as páginas.",
   secretWas: "A combinação era",
   retry: "Abrir outro volume",
   attempt: (n: number) => `Tentativa ${n}`,

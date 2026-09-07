@@ -17,7 +17,7 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "Livro-Cofre",
   description:
-    "Um livro antigo que é também um cofre. Abre-o com a sequência certa de chaves — tens apenas três tentativas.",
+    "Um livro antigo que é também um cofre. Abre-o com a sequência certa de chaves — tens apenas quatro tentativas.",
 };
 
 export const viewport: Viewport = {

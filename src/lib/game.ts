@@ -1,7 +1,7 @@
 import { KEYS } from "./keys.ts";
 
 export const CODE_LENGTH = 4;
-export const MAX_ATTEMPTS = 3;
+export const MAX_ATTEMPTS = 4;
 export const KEY_COUNT = KEYS.length;
 
 export type SlotFeedback = "correct" | "present" | "absent";

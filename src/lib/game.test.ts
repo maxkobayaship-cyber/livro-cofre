@@ -9,10 +9,11 @@ import {
   isWinningAttempt,
   lockedSlotsFromAttempts,
 } from "./game.ts";
+import { PRIZES } from "./prizes.ts";
 
 test("constantes do jogo", () => {
   assert.equal(KEY_COUNT, 10);
-  assert.equal(MAX_ATTEMPTS, 3);
+  assert.equal(MAX_ATTEMPTS, 4);
   assert.equal(CODE_LENGTH, 4);
 });
 
@@ -40,6 +41,13 @@ test("não conta a mesma chave duas vezes", () => {
   const attempt = evaluateGuess([1, 2, 3, 4], [1, 1, 1, 1]);
   assert.equal(attempt.correctPositions, 1);
   assert.equal(attempt.presentCount, 0);
+});
+
+test("o cofre guarda quatro prémios", () => {
+  assert.deepEqual(
+    PRIZES.map((prize) => prize.id),
+    ["dinheiro", "tablet", "macbook", "airpods"],
+  );
 });
 
 test("posição certa trava no último palpite", () => {

@@ -1,8 +1,8 @@
 # Livro-Cofre
 
-Um mini-jogo de browser: um livro antigo que é também um cofre. O jogador tem **dez chaves** e **três tentativas** para descobrir a sequência secreta de quatro chaves.
+Um mini-jogo de browser: um livro antigo que é também um cofre. O jogador tem **dez chaves** e **quatro tentativas** para descobrir a sequência secreta de quatro chaves.
 
-Se o fecho ceder, o livro abre-se. Se as três tentativas falharem, o cofre sela-se.
+Se o fecho ceder, o livro abre-se e revela o tesouro: dinheiro, tablet, MacBook e AirPods. Se as quatro tentativas falharem, o cofre sela-se.
 
 ## Como jogar
 
@@ -12,7 +12,7 @@ Se o fecho ceder, o livro abre-se. Se as três tentativas falharem, o cofre sela
    - **Ouro** — chave certa no lugar certo (fica presa).
    - **Âmbar** — chave certa, mas noutro lugar.
    - **Cinza** — esta chave não faz parte da combinação.
-4. Ajusta as chaves soltas e tenta de novo. À terceira falha, o volume fecha-se de vez (neste livro).
+4. Ajusta as chaves soltas e tenta de novo. À quarta falha, o volume fecha-se de vez (neste livro).
 
 Podes começar outro volume a qualquer momento depois de ganhar ou perder.
 
