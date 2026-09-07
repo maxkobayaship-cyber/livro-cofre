@@ -11,7 +11,7 @@ export function ChanceSeals({ remaining }: { remaining: number }) {
       <p className="font-heading text-[11px] tracking-[0.28em] text-[color:var(--gold-dim)] uppercase">
         {copy.chancesLabel}
       </p>
-      <div className="flex items-end gap-3">
+      <div className="flex items-end gap-2 sm:gap-3">
         {Array.from({ length: MAX_ATTEMPTS }, (_, index) => {
           const alive = index < remaining;
           return (
