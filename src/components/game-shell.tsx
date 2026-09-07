@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { BookSafe } from "@/components/book-safe";
 import { ChanceSeals } from "@/components/chance-seals";
 import { HowToPlay } from "@/components/how-to-play";
+import { PrizeShowcase } from "@/components/vault-prizes";
 import { OrnateKey } from "@/components/ornate-key";
 import { Button } from "@/components/ui/button";
 import { copy } from "@/lib/copy";
@@ -219,6 +220,8 @@ export function GameShell() {
               <div className="space-y-2 text-center">
                 <p className="font-heading text-xl text-[#e8c547]">{copy.winTitle}</p>
                 <p className="text-[color:var(--parchment)]">{copy.winBody}</p>
+                <PrizeShowcase />
+                <p className="font-heading text-sm text-[#c9a227]">{copy.winVerse}</p>
               </div>
             ) : status === "lost" ? (
               <div className="space-y-2 text-center">
