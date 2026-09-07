@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Livro-Cofre">
+  <rect width="64" height="64" rx="12" fill="#1a120c"/>
+  <rect x="12" y="10" width="40" height="44" rx="4" fill="#6b241c" stroke="#c9a227" stroke-width="2"/>
+  <rect x="26" y="28" width="12" height="14" rx="2" fill="#1a120c" stroke="#e8c547"/>
+  <circle cx="32" cy="34" r="3" fill="none" stroke="#e8c547" stroke-width="1.5"/>
+  <path d="M32 37v4" stroke="#e8c547" stroke-width="1.5"/>
+</svg>
