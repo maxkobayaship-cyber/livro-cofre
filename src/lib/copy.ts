@@ -37,14 +37,14 @@ export const copy = {
   },
   winTitle: "O cofre abriu-se",
   winBody:
-    "O fecho cedeu. Lá dentro estava o tesouro: dinheiro, um tablet, um MacBook e uns AirPods.",
+    "O fecho cedeu. Lá dentro estava o tesouro: dinheiro, um tablet, um iPhone, um MacBook e uns AirPods.",
   winVerse:
     "Quem abre o Livro-Cofre leva o que o volume guardava: fortuna e aparelhos à luz do ouro.",
   treasureHidden: "Algo brilha lá dentro",
   treasureRevealed: "Tesouro do volume",
   loseTitle: "O cofre selou-se",
   loseBody:
-    "O ferro esfria. As quatro chances acabaram. As correntes fecham e o tesouro — dinheiro, tablet, MacBook e AirPods — fica selado entre as páginas.",
+    "O ferro esfria. As quatro chances acabaram. As correntes fecham e o tesouro — dinheiro, tablet, iPhone, MacBook e AirPods — fica selado entre as páginas.",
   secretWas: "A combinação era",
   retry: "Abrir outro volume",
   attempt: (n: number) => `Tentativa ${n}`,

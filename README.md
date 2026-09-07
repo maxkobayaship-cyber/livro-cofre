@@ -2,7 +2,7 @@
 
 Um mini-jogo de browser: um livro antigo que é também um cofre. O jogador tem **dez chaves** e **quatro tentativas** para descobrir a sequência secreta de quatro chaves.
 
-Se o fecho ceder, o livro abre-se e revela o tesouro: dinheiro, tablet, MacBook e AirPods. Se as quatro tentativas falharem, o cofre sela-se.
+Se o fecho ceder, o livro abre-se e revela o tesouro: dinheiro, tablet, iPhone, MacBook e AirPods. Se as quatro tentativas falharem, o cofre sela-se.
 
 ## Como jogar
 

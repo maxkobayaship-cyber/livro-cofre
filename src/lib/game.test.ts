@@ -43,10 +43,10 @@ test("não conta a mesma chave duas vezes", () => {
   assert.equal(attempt.presentCount, 0);
 });
 
-test("o cofre guarda quatro prémios", () => {
+test("o cofre guarda cinco prémios", () => {
   assert.deepEqual(
     PRIZES.map((prize) => prize.id),
-    ["dinheiro", "tablet", "macbook", "airpods"],
+    ["dinheiro", "tablet", "iphone", "macbook", "airpods"],
   );
 });
 

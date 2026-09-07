@@ -28,6 +28,15 @@ function PrizeIcon({ id, revealed }: { id: PrizeId; revealed: boolean }) {
           <circle cx="36" cy="49" r="2" fill={revealed ? "#e8c547" : stroke} />
         </svg>
       );
+    case "iphone":
+      return (
+        <svg viewBox="0 0 72 56" className="h-10 w-12" aria-hidden>
+          <rect x="22" y="2" width="28" height="52" rx="6" fill={revealed ? "#1c1c22" : fill} stroke={stroke} />
+          <rect x="25" y="8" width="22" height="38" rx="2" fill={revealed ? "#8ec5ff" : "#d8cbb4"} />
+          <rect x="30" y="4" width="12" height="3" rx="1.5" fill={revealed ? "#2a2a30" : stroke} />
+          <rect x="32" y="48" width="8" height="2" rx="1" fill={revealed ? "#e8c547" : stroke} />
+        </svg>
+      );
     case "macbook":
       return (
         <svg viewBox="0 0 72 56" className="h-10 w-12" aria-hidden>
@@ -82,7 +91,7 @@ export function VaultPrizes({
       >
         {revealed ? copy.treasureRevealed : copy.treasureHidden}
       </p>
-      <ul className="mt-3 grid w-full grid-cols-2 gap-2">
+      <ul className="mt-2 grid w-full grid-cols-3 gap-1.5">
         {PRIZES.map((prize) => (
           <li
             key={prize.id}
@@ -111,7 +120,7 @@ export function VaultPrizes({
 
 export function PrizeShowcase() {
   return (
-    <ul className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4" data-testid="prize-showcase">
+    <ul className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-5" data-testid="prize-showcase">
       {PRIZES.map((prize) => (
         <li
           key={prize.id}
