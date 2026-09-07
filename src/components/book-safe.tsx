@@ -5,6 +5,7 @@ import { copy } from "@/lib/copy";
 import type { SlotFeedback } from "@/lib/game";
 import { getKey } from "@/lib/keys";
 import { OrnateKey } from "@/components/ornate-key";
+import { VaultPrizes } from "@/components/vault-prizes";
 
 type BookSafeProps = {
   status: "playing" | "shaking" | "won" | "lost";
@@ -79,16 +80,7 @@ function CoverOrnaments() {
 }
 
 function WinManuscript() {
-  return (
-    <div className="flex h-full flex-col items-center justify-center px-6 py-8 text-center">
-      <p className="font-heading text-[11px] tracking-[0.35em] text-[#8a6a1c] uppercase">
-        Folha revelada
-      </p>
-      <p className="mt-4 font-heading text-lg leading-snug text-[#3a2414] sm:text-xl">
-        {copy.winVerse}
-      </p>
-    </div>
-  );
+  return <VaultPrizes revealed />;
 }
 
 function Chains() {
@@ -147,7 +139,7 @@ export function BookSafe({
         <div className="book-back" />
         <div className="book-spine" />
         <div className="book-pages">
-          {open ? <WinManuscript /> : <div className="page-lines" />}
+          {open ? <WinManuscript /> : <VaultPrizes revealed={false} />}
         </div>
         <div className="book-cover">
           <div className="cover-leather">
